@@ -19,10 +19,13 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Colors" id="ZvC-Uk-seH"/>
+                    <connections>
+                        <segue destination="6bJ-qd-gu0" kind="show" id="kl9-Dt-Fwm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947.32824427480909" y="117.60563380281691"/>
+            <point key="canvasLocation" x="996" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5yk-0B-k7u">
@@ -42,20 +45,21 @@
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="117.60563380281691"/>
         </scene>
-        <!--View Controller-->
+        <!--Colors DetailVC-->
         <scene sceneID="pgO-zL-LJn">
             <objects>
-                <viewController id="6bJ-qd-gu0" sceneMemberID="viewController">
+                <viewController id="6bJ-qd-gu0" customClass="ColorsDetailVC" customModule="ColorsNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GdU-4U-eZ7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="eDg-Bs-bZp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zpg-7x-2zl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2i-Os-9mm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1885" y="118"/>
+            <point key="canvasLocation" x="2118" y="118"/>
         </scene>
     </scenes>
     <resources>
