@@ -40,12 +40,16 @@
                         <constraints>
                             <constraint firstItem="HCI-Y8-OH4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4tw-xI-2Eg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HCI-Y8-OH4" secondAttribute="trailing" id="5xN-Wk-6bM"/>
+                            <constraint firstItem="HCI-Y8-OH4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8c8-BQ-cOy"/>
                             <constraint firstItem="HCI-Y8-OH4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EPY-xu-ace"/>
                             <constraint firstItem="HCI-Y8-OH4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ng1-yv-Lp6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HCI-Y8-OH4" secondAttribute="bottom" id="Ov8-Wm-Xrf"/>
                             <constraint firstItem="HCI-Y8-OH4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ykc-rA-pCa"/>
+                            <constraint firstItem="HCI-Y8-OH4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eas-31-7i5"/>
                             <constraint firstAttribute="bottom" secondItem="HCI-Y8-OH4" secondAttribute="bottom" id="gCf-en-q3k"/>
                             <constraint firstAttribute="trailing" secondItem="HCI-Y8-OH4" secondAttribute="trailing" id="nwH-ey-AUA"/>
+                            <constraint firstAttribute="bottom" secondItem="HCI-Y8-OH4" secondAttribute="bottom" id="v8M-rO-wbF"/>
+                            <constraint firstAttribute="trailing" secondItem="HCI-Y8-OH4" secondAttribute="trailing" id="y9s-Rq-9NK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colors" id="ZvC-Uk-seH"/>
