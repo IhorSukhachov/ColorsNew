@@ -27,6 +27,11 @@ class ViewController: UIViewController  {
             colors.append(color)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! ColorsDetailVC
+        destinationVC.color = sender as? UIColor
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -42,6 +47,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ToColorDetailVC", sender: nil)
+        let color = colors[indexPath.row]
+        performSegue(withIdentifier: "ToColorDetailVC", sender: color)
     }
 }
