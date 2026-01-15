@@ -35,8 +35,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell")
-         return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell") else {return UITableViewCell()}
+        let color = colors[indexPath.row]
+        cell.backgroundColor = color
+         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
