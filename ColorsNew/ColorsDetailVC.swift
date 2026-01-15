@@ -12,7 +12,7 @@ class ColorsDetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = color ?? .brown 
         // Do any additional setup after loading the view.
     }
     
