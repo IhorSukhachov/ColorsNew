@@ -12,11 +12,12 @@ class ViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createRandomColors()
         // Do any additional setup after loading the view.
     }
 
 
-    func createRandomCOlors() {
+    func createRandomColors() {
         for _ in 0..<50 {
             let red = CGFloat.random(in: 0...1)
             let green = CGFloat.random(in: 0...1)
@@ -30,10 +31,11 @@ class ViewController: UIViewController  {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return colors.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell")
          return UITableViewCell()
     }
     
